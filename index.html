@@ -6,7 +6,7 @@
     <title>KYC Form</title>
     <style>
         body {
-            background-color: #00CED1; /* Cyan Blue Background */
+            background-color: #87CEEB; /* Sky Blue Background */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -88,15 +88,42 @@
             <input type="text" id="caretakerName" name="caretakerName" required>
 
             <h2>Beneficiaries</h2>
+            <!-- Beneficiary 1 -->
             <div class="beneficiary">
-                <label for="beneficiary1Name">Beneficiary 1 Name</label>
+                <h3>Beneficiary 1</h3>
+                <label for="beneficiary1Name">Name</label>
                 <input type="text" id="beneficiary1Name" name="beneficiary1Name" required>
 
-                <label for="beneficiary1Dob">Beneficiary 1 Date of Birth</label>
+                <label for="beneficiary1Dob">Date of Birth</label>
                 <input type="date" id="beneficiary1Dob" name="beneficiary1Dob" required>
 
-                <label for="beneficiary1Id">Beneficiary 1 ID Number</label>
+                <label for="beneficiary1Id">ID Number</label>
                 <input type="text" id="beneficiary1Id" name="beneficiary1Id" required>
 
-                <label for="beneficiary1Relationship">Beneficiary 1 Relationship</label>
-                <input type
+                <label for="beneficiary1Relationship">Relationship</label>
+                <input type="text" id="beneficiary1Relationship" name="beneficiary1Relationship" required>
+            </div>
+
+            <!-- Beneficiary 2 -->
+            <div class="beneficiary">
+                <h3>Beneficiary 2</h3>
+                <label for="beneficiary2Name">Name</label>
+                <input type="text" id="beneficiary2Name" name="beneficiary2Name" required>
+
+                <label for="beneficiary2Dob">Date of Birth</label>
+                <input type="date" id="beneficiary2Dob" name="beneficiary2Dob" required>
+
+                <label for="beneficiary2Id">ID Number</label>
+                <input type="text" id="beneficiary2Id" name="beneficiary2Id" required>
+
+                <label for="beneficiary2Relationship">Relationship</label>
+                <input type="text" id="beneficiary2Relationship" name="beneficiary2Relationship" required>
+            </div>
+
+            <!-- Add additional beneficiary slots (up to 6) -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
