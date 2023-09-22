@@ -10,35 +10,40 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-
-        .header {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px 10px 0 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
             background-color: white;
             padding: 20px;
-            border-radius: 0 0 10px 10px;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            max-width: 90%; /* Make the form 90% of the viewport width */
+            max-width: 600px;
             width: 100%;
             box-sizing: border-box;
+            animation: hoverUpAndDown 2s infinite alternate; /* Hover Animation */
+        }
+
+        @keyframes hoverUpAndDown {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px); /* Adjust the value to control the hover distance */
+            }
         }
 
         h1 {
             text-align: center;
-            font-size: 24px; /* Smaller font size for the heading */
         }
 
         label, input, select {
             display: block;
             margin-bottom: 10px;
             width: 100%;
-            font-size: 16px; /* Smaller font size for form elements */
         }
 
         .beneficiary {
@@ -50,10 +55,8 @@
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>KYC Family Cover Form</h1>
-    </div>
     <div class="container">
+        <h1>KYC Family Cover Form</h1>
         <form action="#" method="post">
             <!-- ... (Rest of the form remains unchanged) -->
         </form>
