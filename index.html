@@ -10,16 +10,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         .container {
             background-color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 0 0 10px 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             max-width: 90%; /* Make the form 90% of the viewport width */
             width: 100%;
@@ -29,7 +32,6 @@
         h1 {
             text-align: center;
             font-size: 24px; /* Smaller font size for the heading */
-            margin-bottom: 20px; /* Add margin to separate the heading from form elements */
         }
 
         label, input, select {
@@ -48,8 +50,10 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>KYC Family Cover Form</h1>
+    </div>
+    <div class="container">
         <form action="#" method="post">
             <!-- ... (Rest of the form remains unchanged) -->
         </form>
