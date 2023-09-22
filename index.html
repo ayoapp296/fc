@@ -21,29 +21,21 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            max-width: 90%; /* Make the form 90% of the viewport width */
             width: 100%;
             box-sizing: border-box;
-            animation: hoverUpAndDown 2s infinite alternate; /* Hover Animation */
-        }
-
-        @keyframes hoverUpAndDown {
-            0% {
-                transform: translateY(0);
-            }
-            100% {
-                transform: translateY(-10px); /* Adjust the value to control the hover distance */
-            }
         }
 
         h1 {
             text-align: center;
+            font-size: 24px; /* Smaller font size for the heading */
         }
 
         label, input, select {
             display: block;
             margin-bottom: 10px;
             width: 100%;
+            font-size: 16px; /* Smaller font size for form elements */
         }
 
         .beneficiary {
