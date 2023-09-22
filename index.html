@@ -10,24 +10,35 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
         }
 
         .container {
             background-color: white;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 0 0 10px 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             max-width: 800px; /* Increased width */
             width: 100%;
+            margin-top: 70px; /* Adjust top margin for spacing */
             box-sizing: border-box;
         }
 
         h1 {
             text-align: center;
+            font-size: 24px; /* Increased font size */
+            margin-bottom: 20px; /* Increased spacing */
         }
 
         label, input, select {
@@ -52,14 +63,16 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 18px;
+            font-size: 18px; /* Increased font size */
             margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>KYC Form</h1>
+    </div>
+    <div class="container">
         <form action="#" method="post">
             <!-- ... (Rest of the form remains unchanged) -->
         </form>
